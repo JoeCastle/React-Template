@@ -10,10 +10,10 @@ export const FourZeroFour: React.FC = () => {
     return (
         <div className="page not-found-page">
             <Helmet>
-                <title>Page not found - Joseph Castle</title>
+                <title>404 page title</title>
                 <meta
                     name="description"
-                    content="404 page not found | Joseph Castle is a full-stack software developer with experience building websites and web applications using React, .NET and SQL."
+                    content="404 page description."
                 />
                 <meta name="robots" content="noindex, follow" />
             </Helmet>

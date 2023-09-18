@@ -1,13 +1,8 @@
 @import 'theme.scss';
 @import 'navbar.scss';
 @import 'variables.scss';
-@import 'contact.scss';
-@import 'project.scss';
-@import 'skill.scss';
 @import 'footer.scss';
 @import 'fourzerofour.scss';
-@import 'skillarea.scss';
-@import 'yarl.scss';
 
 // Intersection observer doesn't work on touch screen devices, so we want to show content by default.
 .content-container {
@@ -127,69 +122,6 @@ main {
         > i {
             font-size: 18px;
         }
-    }
-}
-
-#Projects,
-#Skills {
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        height: auto !important;
-    }
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    min-height: calc(100vh - #{$navbar-height});
-
-    // Required to vertically center items for IE11 - https://medium.com/codeart-mk/internet-explorer-hacks-796200e5741c
-    // Target IE11 only as this will break other browsers.
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        height: 1px;
-    }
-
-    @media (max-width: 325px) {
-        padding: 20px 10px;
-    }
-
-    .content-container {
-        .section-title-wrapper {
-            text-align: center;
-
-            h2 {
-                font-weight: bold;
-                text-align: center;
-                font-size: 42px;
-                margin-bottom: 30px;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
-                display: inline-block;
-
-                @media (max-width: 450px) {
-                    font-size: 30px;
-                    padding-bottom: 5px;
-                    margin: 10px 0px;
-                }
-            }
-        }
-    }
-}
-
-.section.about {
-    min-height: calc(100vh - #{$navbar-height});
-}
-
-.contact-info {
-    > a {
-        text-decoration: none;
-    }
-
-    > a:hover,
-    a:active {
-        text-decoration: underline;
     }
 }
 

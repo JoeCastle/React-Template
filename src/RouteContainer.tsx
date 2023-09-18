@@ -5,7 +5,6 @@ import { FourZeroFour } from './components/pages/FourZeroFour';
 import { NavMenu } from './components/shared/NavMenu';
 import { Footer } from './components/shared/Footer';
 import ScrollToAnchor from './components/ScrollToAnchor';
-import globals from './utils/globals';
 
 //Query strings
 //https://tylermcginnis.com/react-router-query-strings/
@@ -18,7 +17,7 @@ interface State {
 }
 
 //const userDarkTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches === true;
-const isDarkModeDefault = globals.isDarkModeDefault;
+const isDarkModeDefault = false;
 
 export const RouteContainer = (props: Props, state: State): JSX.Element => {
     const [isDarkMode, setIsDarkMode] = useState<boolean>(true);

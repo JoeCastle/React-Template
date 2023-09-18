@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLinkIdType } from '../../hooks/useOnScreen';
 import Logo from '../../images/logo_cropped.png';
 import { Link } from 'react-router-dom';
 
@@ -40,23 +39,8 @@ export const NavMenu: React.FC<Props> = (props: Props) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="nav navbar-nav" id="navmenu-ul">
                             <li>
-                                <Link id={NavLinkIdType.About} to="/#About">
-                                    <i className="fas fa-info"></i> About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link id={NavLinkIdType.Projects} to="/#Projects">
-                                    <i className="fas fa-laptop-code"></i> Projects
-                                </Link>
-                            </li>
-                            <li>
-                                <Link id={NavLinkIdType.Skills} to="/#Skills">
-                                    <i className="fas fa-code"></i> Skills
-                                </Link>
-                            </li>
-                            <li>
-                                <Link id={NavLinkIdType.Contact} to="/#Contact">
-                                    <i className="fas fa-envelope"></i> Contact
+                                <Link id={'home-navlink'} to="/">
+                                    <i className="fas fa-info"></i> Home
                                 </Link>
                             </li>
                         </ul>
