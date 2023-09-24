@@ -21,7 +21,7 @@ export const NavMenu: React.FC<Props> = (props: Props) => {
                     <div className="navbar-header">
                         <h1>
                             <Link className="navbar-brand" to={'/#Home'}>
-                                <img src={Logo} alt="Joseph Castle" />
+                                <img src={Logo} alt="Logo" />
                             </Link>
                         </h1>
                         <button
